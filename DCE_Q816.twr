@@ -1,0 +1,285 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml DCE_Q816.twx DCE_Q816.ncd -o DCE_Q816.twr DCE_Q816.pcf
+-ucf przypisanie_pinow.ucf
+
+Design file:              DCE_Q816.ncd
+Physical constraint file: DCE_Q816.pcf
+Device,package,speed:     xc3s50a,tq144,-5 (PRODUCTION 1.42 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: NET "CPUclk_BUFGP/IBUFG" PERIOD = 83.3333333 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 3 paths analyzed, 3 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   1.663ns.
+--------------------------------------------------------------------------------
+
+Paths for end point U5/Lout_1 (SLICE_X15Y23.G1), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     81.670ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               U5/Lout_0 (FF)
+  Destination:          U5/Lout_1 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      1.663ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CPUclk_BUFGP rising at 0.000ns
+  Destination Clock:    CPUclk_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: U5/Lout_0 to U5/Lout_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X15Y23.XQ      Tcko                  0.495   U5/Lout<0>
+                                                       U5/Lout_0
+    SLICE_X15Y23.G1      net (fanout=10)       0.567   U5/Lout<0>
+    SLICE_X15Y23.CLK     Tgck                  0.601   U5/Lout<0>
+                                                       U5/Mcount_Lout_xor<1>11
+                                                       U5/Lout_1
+    -------------------------------------------------  ---------------------------
+    Total                                      1.663ns (1.096ns logic, 0.567ns route)
+                                                       (65.9% logic, 34.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point U5/Lout_1 (SLICE_X15Y23.G4), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     81.751ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               U5/Lout_1 (FF)
+  Destination:          U5/Lout_1 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      1.582ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CPUclk_BUFGP rising at 0.000ns
+  Destination Clock:    CPUclk_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: U5/Lout_1 to U5/Lout_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X15Y23.YQ      Tcko                  0.524   U5/Lout<0>
+                                                       U5/Lout_1
+    SLICE_X15Y23.G4      net (fanout=9)        0.457   U5/Lout<1>
+    SLICE_X15Y23.CLK     Tgck                  0.601   U5/Lout<0>
+                                                       U5/Mcount_Lout_xor<1>11
+                                                       U5/Lout_1
+    -------------------------------------------------  ---------------------------
+    Total                                      1.582ns (1.125ns logic, 0.457ns route)
+                                                       (71.1% logic, 28.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point U5/Lout_0 (SLICE_X15Y23.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     81.922ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               U5/Lout_0 (FF)
+  Destination:          U5/Lout_0 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      1.411ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CPUclk_BUFGP rising at 0.000ns
+  Destination Clock:    CPUclk_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: U5/Lout_0 to U5/Lout_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X15Y23.XQ      Tcko                  0.495   U5/Lout<0>
+                                                       U5/Lout_0
+    SLICE_X15Y23.BX      net (fanout=10)       0.720   U5/Lout<0>
+    SLICE_X15Y23.CLK     Tdick                 0.196   U5/Lout<0>
+                                                       U5/Lout_0
+    -------------------------------------------------  ---------------------------
+    Total                                      1.411ns (0.691ns logic, 0.720ns route)
+                                                       (49.0% logic, 51.0% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: NET "CPUclk_BUFGP/IBUFG" PERIOD = 83.3333333 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point U5/Lout_0 (SLICE_X15Y23.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.054ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               U5/Lout_0 (FF)
+  Destination:          U5/Lout_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.054ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CPUclk_BUFGP rising at 83.333ns
+  Destination Clock:    CPUclk_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: U5/Lout_0 to U5/Lout_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X15Y23.XQ      Tcko                  0.396   U5/Lout<0>
+                                                       U5/Lout_0
+    SLICE_X15Y23.BX      net (fanout=10)       0.576   U5/Lout<0>
+    SLICE_X15Y23.CLK     Tckdi       (-Th)    -0.082   U5/Lout<0>
+                                                       U5/Lout_0
+    -------------------------------------------------  ---------------------------
+    Total                                      1.054ns (0.478ns logic, 0.576ns route)
+                                                       (45.4% logic, 54.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point U5/Lout_1 (SLICE_X15Y23.G4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.191ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               U5/Lout_1 (FF)
+  Destination:          U5/Lout_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.191ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CPUclk_BUFGP rising at 83.333ns
+  Destination Clock:    CPUclk_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: U5/Lout_1 to U5/Lout_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X15Y23.YQ      Tcko                  0.419   U5/Lout<0>
+                                                       U5/Lout_1
+    SLICE_X15Y23.G4      net (fanout=9)        0.366   U5/Lout<1>
+    SLICE_X15Y23.CLK     Tckg        (-Th)    -0.406   U5/Lout<0>
+                                                       U5/Mcount_Lout_xor<1>11
+                                                       U5/Lout_1
+    -------------------------------------------------  ---------------------------
+    Total                                      1.191ns (0.825ns logic, 0.366ns route)
+                                                       (69.3% logic, 30.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point U5/Lout_1 (SLICE_X15Y23.G1), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.255ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               U5/Lout_0 (FF)
+  Destination:          U5/Lout_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.255ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CPUclk_BUFGP rising at 83.333ns
+  Destination Clock:    CPUclk_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: U5/Lout_0 to U5/Lout_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X15Y23.XQ      Tcko                  0.396   U5/Lout<0>
+                                                       U5/Lout_0
+    SLICE_X15Y23.G1      net (fanout=10)       0.453   U5/Lout<0>
+    SLICE_X15Y23.CLK     Tckg        (-Th)    -0.406   U5/Lout<0>
+                                                       U5/Mcount_Lout_xor<1>11
+                                                       U5/Lout_1
+    -------------------------------------------------  ---------------------------
+    Total                                      1.255ns (0.802ns logic, 0.453ns route)
+                                                       (63.9% logic, 36.1% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: NET "CPUclk_BUFGP/IBUFG" PERIOD = 83.3333333 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 82.085ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 83.333ns
+  Low pulse: 41.666ns
+  Low pulse limit: 0.624ns (Tcl)
+  Physical resource: U5/Lout<0>/CLK
+  Logical resource: U5/Lout_0/CK
+  Location pin: SLICE_X15Y23.CLK
+  Clock network: CPUclk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 82.085ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 83.333ns
+  High pulse: 41.666ns
+  High pulse limit: 0.624ns (Tch)
+  Physical resource: U5/Lout<0>/CLK
+  Logical resource: U5/Lout_0/CK
+  Location pin: SLICE_X15Y23.CLK
+  Clock network: CPUclk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 82.085ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 83.333ns
+  Low pulse: 41.666ns
+  Low pulse limit: 0.624ns (Tcl)
+  Physical resource: U5/Lout<0>/CLK
+  Logical resource: U5/Lout_1/CK
+  Location pin: SLICE_X15Y23.CLK
+  Clock network: CPUclk_BUFGP
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock CPUclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CPUclk         |    1.663|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 3 paths, 0 nets, and 5 connections
+
+Design statistics:
+   Minimum period:   1.663ns{1}   (Maximum frequency: 601.323MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Thu Jan 24 16:11:26 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 171 MB
+
+
+
