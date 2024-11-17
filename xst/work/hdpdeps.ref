@@ -1,0 +1,80 @@
+V3 48
+FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/ALU.vhd 2018/12/27.22:01:50 P.20131013
+EN work/ALU 1548342661 FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/ALU.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/ALU/Behavioral 1548342662 \
+      FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/ALU.vhd EN work/ALU 1548342661
+FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/CORE_M2.vhd 2019/01/21.13:17:37 P.20131013
+EN work/CORE_M2 1548342663 \
+      FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/CORE_M2.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/CORE_M2/Behavioral 1548342664 \
+      FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/CORE_M2.vhd EN work/CORE_M2 1548342663 \
+      CP ALU
+FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/DB.vhd 2019/01/21.13:17:57 P.20131013
+EN work/DB 1548342665 FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/DB.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/DB/Behavioral 1548342666 \
+      FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/DB.vhd EN work/DB 1548342665
+FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/DCE_Q816.vhd 2019/01/24.16:10:56 P.20131013
+EN work/DCE_Q816 1548342683 \
+      FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/DCE_Q816.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/DCE_Q816/Behavioral 1548342684 \
+      FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/DCE_Q816.vhd EN work/DCE_Q816 1548342683 \
+      CP CORE_M2 CP DB CP IN_REG CP IR CP Logic CP MUX CP OUT_REG CP OUT_VGA CP PC CP RAR
+FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/IN_REG.vhd 2019/01/22.14:48:36 P.20131013
+EN work/IN_REG 1548342667 \
+      FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/IN_REG.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/IN_REG/Behavioral 1548342668 \
+      FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/IN_REG.vhd EN work/IN_REG 1548342667
+FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/IR.vhd 2019/01/21.13:17:57 P.20131013
+EN work/IR 1548342669 FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/IR.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/IR/Behavioral 1548342670 \
+      FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/IR.vhd EN work/IR 1548342669
+FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/Logic.vhd 2019/01/24.16:09:22 P.20131013
+EN work/Logic 1548342671 FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/Logic.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Logic/Structural 1548342672 \
+      FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/Logic.vhd EN work/Logic 1548342671
+FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/MUX.vhd 2019/01/21.13:22:00 P.20131013
+EN work/MUX 1548342673 FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/MUX.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/MUX/Behavioral 1548342674 \
+      FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/MUX.vhd EN work/MUX 1548342673
+FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/OUT.vhd 2018/12/30.17:46:40 P.20131013
+FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/OUT_REG.vhd 2019/01/21.13:18:13 P.20131013
+EN work/OUT_REG 1548342675 \
+      FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/OUT_REG.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/OUT_REG/Behavioral 1548342676 \
+      FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/OUT_REG.vhd EN work/OUT_REG 1548342675
+FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/OUT_VGA.vhd 2019/01/21.13:18:25 P.20131013
+EN work/OUT_VGA 1548342677 \
+      FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/OUT_VGA.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/OUT_VGA/Behavioral 1548342678 \
+      FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/OUT_VGA.vhd EN work/OUT_VGA 1548342677
+FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/PC.vhd 2019/01/16.21:48:30 P.20131013
+EN work/PC 1548342679 FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/PC.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/PC/Behavioral 1548342680 \
+      FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/PC.vhd EN work/PC 1548342679
+FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/RAR.vhd 2019/01/22.18:18:28 P.20131013
+EN work/RAR 1548342681 FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/RAR.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/RAR/Behavioral 1548342682 \
+      FL C:/Users/ja/Desktop/work/FPGA/projekty/ALU/RAR.vhd EN work/RAR 1548342681
